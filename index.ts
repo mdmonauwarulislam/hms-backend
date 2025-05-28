@@ -40,12 +40,12 @@ mongoose
   })
 
 // Routes
-app.use("/api/auth", authRoutes)
-app.use("/api/hospitals", hospitalRoutes)
-app.use("/api/doctors", doctorRoutes)
-app.use("/api/patients", patientRoutes)
-app.use("/api/prescriptions", prescriptionRoutes)
-app.use("/api/hospital-admins", hospitalAdminRoutes)
+app.use("/auth", authRoutes)
+app.use("/hospitals", hospitalRoutes)
+app.use("/doctors", doctorRoutes)
+app.use("/patients", patientRoutes)
+app.use("/prescriptions", prescriptionRoutes)
+app.use("/hospital-admins", hospitalAdminRoutes)
 
 // Health check endpoint
 app.get("/health", (req, res) => {
